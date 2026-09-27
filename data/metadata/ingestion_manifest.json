@@ -1,0 +1,33 @@
+{
+  "corpus_version": "v0.2",
+  "dataset_name": "cybercodemini_train_v0.2",
+  "created_at": "2026-09-27T13:37:09.476671+00:00",
+  "total_approved_examples": 420,
+  "rejected_count": 0,
+  "categories_breakdown": {
+    "code_generation": 120,
+    "debugging": 20,
+    "security_review": 20,
+    "vulnerability_remediation": 120,
+    "agent_trajectories": 120,
+    "authorized_lab": 20
+  },
+  "sources_breakdown": {
+    "cybercode_curated_dev": 120,
+    "secbench-hf/SecBench": 100,
+    "SWE-bench/SWE-bench": 100,
+    "OpenHermes-Code-Sample": 100
+  },
+  "licenses_breakdown": {
+    "MIT": 420
+  },
+  "datasets_registered": [
+    "cybercode_curated_dev",
+    "secbench_vulnerabilities",
+    "swe_bench_trajectories",
+    "candidate_unknown_license_db",
+    "secbench-hf/SecBench",
+    "SWE-bench/SWE-bench",
+    "OpenHermes-Code-Sample"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "dataset_id": "test_owner/dataset_sample",
+  "revision": "v1.0.0",
+  "split": "train",
+  "subset": null,
+  "rows_inspected": 100,
+  "license": "MIT",
+  "license_verified": true,
+  "commercial_restriction": false,
+  "license_status": "approved",
+  "approval_status": "approved",
+  "training_candidate": true,
+  "evaluation_candidate": true,
+  "notes": "Approved under policy (source: dataset_card)."
+}

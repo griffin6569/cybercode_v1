@@ -1,0 +1,7 @@
+[
+  {
+    "dataset_id": "candidate_unknown_license_db",
+    "reason": "Unknown license and unclear provenance.",
+    "recommended_action": "Exclude from training until license is verified."
+  }
+]
