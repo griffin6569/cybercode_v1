@@ -1,0 +1,34 @@
+# CyberCodeMini Azure ML Evaluation Job
+$schema: https://azuremlschemas.azureedge.net/latest/commandJob.schema.json
+
+display_name: cybercodemini-evaluation
+experiment_name: cybercodemini
+
+compute: azureml:gpu-cluster
+
+environment:
+  conda_file: environment.yml
+  image: mcr.microsoft.com/azureml/openmpi4.1.0-cuda11.8-cudnn8-ubuntu22.04:latest
+
+command: >-
+  python evaluation/run_eval.py
+  --model cybercodemini
+  --config configs/evaluation.yaml
+  --output-dir ${{outputs.results}}
+
+inputs:
+  model:
+    type: uri_folder
+  eval_data:
+    type: uri_folder
+    path: data/test/
+
+outputs:
+  results:
+    type: uri_folder
+
+resources:
+  instance_count: 1
+
+limits:
+  timeout: 3600  # 1 hour max

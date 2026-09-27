@@ -1,0 +1,33 @@
+# CyberCodeMini Azure ML Training Job
+# Submit with: az ml job create --file azure/train_job.yaml
+
+$schema: https://azuremlschemas.azureedge.net/latest/commandJob.schema.json
+
+display_name: cybercodemini-lora-training
+experiment_name: cybercodemini
+
+compute: azureml:gpu-cluster
+
+environment:
+  conda_file: environment.yml
+  image: mcr.microsoft.com/azureml/openmpi4.1.0-cuda11.8-cudnn8-ubuntu22.04:latest
+
+command: >-
+  python training/train.py
+  --config configs/training.yaml
+  --output-dir ${{outputs.model}}
+
+inputs:
+  dataset:
+    type: uri_folder
+    path: data/train/
+
+outputs:
+  model:
+    type: uri_folder
+
+resources:
+  instance_count: 1
+
+limits:
+  timeout: 7200  # 2 hours max

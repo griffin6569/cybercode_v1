@@ -1,0 +1,45 @@
+{
+  "run_id": "cybercodemini_lora_v001",
+  "created_at": "2026-09-27T14:39:55.011575+00:00",
+  "config_hash": "1c2313faa157",
+  "dataset_hash": "4664fde5d416ed79",
+  "dataset_manifest_version": "1.0.0",
+  "model": {
+    "model_name": "Qwen/Qwen2.5-Coder-1.5B-Instruct",
+    "model_revision": "main",
+    "tokenizer_name": "Qwen/Qwen2.5-Coder-1.5B-Instruct",
+    "max_sequence_length": 2048
+  },
+  "method": "lora",
+  "training_hyperparameters": {
+    "seed": 42,
+    "epochs": 3,
+    "batch_size": 4,
+    "gradient_accumulation_steps": 4,
+    "learning_rate": 0.0002,
+    "warmup_ratio": 0.05,
+    "lr_scheduler_type": "cosine"
+  },
+  "lora_configuration": {},
+  "quantization_configuration": {
+    "enabled": false,
+    "bits": 4,
+    "quant_type": "nf4",
+    "double_quant": true
+  },
+  "hardware": {
+    "device": "cpu",
+    "device_count": 1,
+    "device_name": "AMD64 Family 25 Model 80 Stepping 0, AuthenticAMD",
+    "total_memory_gb": 0.0,
+    "python_version": "3.12.10"
+  },
+  "library_versions": {
+    "python": "3.12.10",
+    "torch": "not_installed",
+    "transformers": "not_installed",
+    "peft": "not_installed",
+    "accelerate": "not_installed",
+    "bitsandbytes": "not_installed"
+  }
+}
