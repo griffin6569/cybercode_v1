@@ -1,0 +1,43 @@
+{
+  "version": "v0.3.0",
+  "creation_timestamp": "2026-09-27T14:03:18.612713+00:00",
+  "seed": 42,
+  "total_training_candidates": 900,
+  "total_validation_candidates": 90,
+  "source_datasets": {
+    "cybercode_curated_dev": 100,
+    "OpenHermes-Code-Sample": 100,
+    "cybercode_curated_vulnerability_remediation": 160,
+    "cybercode_curated_agent_trajectories": 130,
+    "cybercode_curated_security_review_and_reasoning": 150,
+    "cybercode_curated_debugging_and_refactoring": 140,
+    "cybercode_curated_authorized_labs": 60,
+    "CodeLlama-Instruct-Code-Samples": 60
+  },
+  "capability_distribution": {
+    "code_generation": 174,
+    "agent_trajectories": 17,
+    "authorized_lab": 76,
+    "debugging": 62,
+    "security_review": 94,
+    "vulnerability_remediation": 178,
+    "agent_tool_use": 130,
+    "vulnerability_detection": 75,
+    "refactoring": 47,
+    "test_generation": 47
+  },
+  "license_distribution": {
+    "MIT": 740,
+    "Apache-2.0": 100,
+    "Llama-2": 60
+  },
+  "deduplication_summary": {
+    "exact_duplicates_found": 0,
+    "training_eval_duplicates": 0,
+    "dedup_rejected_count": 0
+  },
+  "quality_summary": {
+    "accepted_count": 990,
+    "pii_flagged_count": 0
+  }
+}

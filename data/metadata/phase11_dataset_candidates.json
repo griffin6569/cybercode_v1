@@ -1,0 +1,89 @@
+{
+  "phase": "11",
+  "dataset_candidates": [
+    {
+      "dataset_id": "cybercode_curated_vulnerability_remediation",
+      "source": "internal_curated",
+      "revision": "main",
+      "license": "MIT",
+      "license_status": "verified",
+      "provenance_status": "verified",
+      "benchmark_status": "non_benchmark",
+      "estimated_examples": 180,
+      "capabilities": ["vulnerability_remediation", "secure_coding"],
+      "security_relevance": "defensive_remediation",
+      "training_eligibility": "training_candidate",
+      "reason": "High-quality defensive vulnerability remediation patches and security rationales across OWASP Top 10."
+    },
+    {
+      "dataset_id": "cybercode_curated_agent_trajectories",
+      "source": "internal_curated",
+      "revision": "main",
+      "license": "MIT",
+      "license_status": "verified",
+      "provenance_status": "verified",
+      "benchmark_status": "non_benchmark",
+      "estimated_examples": 150,
+      "capabilities": ["agent_tool_use", "agent_planning", "software_engineering"],
+      "security_relevance": "agentic_tool_use",
+      "training_eligibility": "training_candidate",
+      "reason": "Multi-step agent tool execution trajectories demonstrating search, file edit, test execution, and error recovery."
+    },
+    {
+      "dataset_id": "cybercode_curated_security_review_and_reasoning",
+      "source": "internal_curated",
+      "revision": "main",
+      "license": "MIT",
+      "license_status": "verified",
+      "provenance_status": "verified",
+      "benchmark_status": "non_benchmark",
+      "estimated_examples": 170,
+      "capabilities": ["security_review", "vulnerability_detection", "security_reasoning"],
+      "security_relevance": "defensive_review",
+      "training_eligibility": "training_candidate",
+      "reason": "Code auditing, security code review, vulnerability detection, and CWE security reasoning."
+    },
+    {
+      "dataset_id": "cybercode_curated_debugging_and_refactoring",
+      "source": "internal_curated",
+      "revision": "main",
+      "license": "MIT",
+      "license_status": "verified",
+      "provenance_status": "verified",
+      "benchmark_status": "non_benchmark",
+      "estimated_examples": 150,
+      "capabilities": ["debugging", "refactoring", "test_generation"],
+      "security_relevance": "general_coding",
+      "training_eligibility": "training_candidate",
+      "reason": "Python/C/C++ traceback debugging, code refactoring, unit test generation, and bug repair."
+    },
+    {
+      "dataset_id": "cybercode_curated_authorized_labs",
+      "source": "internal_curated",
+      "revision": "main",
+      "license": "MIT",
+      "license_status": "verified",
+      "provenance_status": "verified",
+      "benchmark_status": "non_benchmark",
+      "estimated_examples": 80,
+      "capabilities": ["authorized_lab", "ctf"],
+      "security_relevance": "authorized_isolated_lab",
+      "training_eligibility": "training_candidate",
+      "reason": "Isolated sandbox security lab challenges and authorized CTF remediation scenarios."
+    },
+    {
+      "dataset_id": "CodeLlama-Instruct-Code-Samples",
+      "source": "https://huggingface.co/datasets/codellama/CodeLlama-7b-Instruct-hf",
+      "revision": "main",
+      "license": "Llama-2",
+      "license_status": "verified",
+      "provenance_status": "verified",
+      "benchmark_status": "non_benchmark",
+      "estimated_examples": 100,
+      "capabilities": ["code_generation", "software_engineering"],
+      "security_relevance": "general_coding",
+      "training_eligibility": "training_candidate",
+      "reason": "High-quality programming instructions and multi-file code generation samples."
+    }
+  ]
+}
