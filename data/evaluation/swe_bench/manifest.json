@@ -1,0 +1,8 @@
+{
+  "dataset_id": "SWE-bench/SWE-bench",
+  "revision": "v1.0.0",
+  "license": "MIT",
+  "classification": "evaluation_only",
+  "reason": "coding_agent_benchmark",
+  "sample_count": 100
+}

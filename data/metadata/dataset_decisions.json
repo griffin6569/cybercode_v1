@@ -1,0 +1,65 @@
+{
+  "datasets": [
+    {
+      "dataset_id": "cybercode_curated_dev",
+      "revision": "main",
+      "license": "MIT",
+      "license_status": "verified",
+      "provenance_status": "verified",
+      "benchmark_status": "non_benchmark",
+      "classification": "training_candidate",
+      "reason": "Curated internal development dataset",
+      "sample_count": 120,
+      "approved_training_examples": 100,
+      "approved_validation_examples": 20
+    },
+    {
+      "dataset_id": "secbench-hf/SecBench",
+      "revision": "v2.1.0",
+      "license": "MIT",
+      "license_status": "verified",
+      "provenance_status": "verified",
+      "benchmark_status": "benchmark",
+      "classification": "evaluation_only",
+      "reason": "SecBench security evaluation benchmark dataset separated to prevent contamination",
+      "sample_count": 100,
+      "approved_training_examples": 0
+    },
+    {
+      "dataset_id": "SWE-bench/SWE-bench",
+      "revision": "v1.0.0",
+      "license": "MIT",
+      "license_status": "verified",
+      "provenance_status": "verified",
+      "benchmark_status": "benchmark",
+      "classification": "evaluation_only",
+      "reason": "SWE-bench coding agent evaluation benchmark dataset separated to prevent contamination",
+      "sample_count": 100,
+      "approved_training_examples": 0
+    },
+    {
+      "dataset_id": "OpenHermes-Code-Sample",
+      "revision": "main",
+      "license": "Apache-2.0",
+      "license_status": "verified",
+      "provenance_status": "verified",
+      "benchmark_status": "non_benchmark",
+      "classification": "training_candidate",
+      "reason": "OpenHermes code instruction tuning dataset cleared for training",
+      "sample_count": 100,
+      "approved_training_examples": 100
+    },
+    {
+      "dataset_id": "candidate_unknown_license_db",
+      "revision": "main",
+      "license": "unknown",
+      "license_status": "unverified",
+      "provenance_status": "unclear",
+      "benchmark_status": "unknown",
+      "classification": "review",
+      "reason": "Unknown dataset license and unclear provenance",
+      "sample_count": 50,
+      "approved_training_examples": 0
+    }
+  ]
+}

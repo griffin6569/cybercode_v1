@@ -1,0 +1,13 @@
+{
+  "dataset_id": "OpenHermes-Code-Sample",
+  "hf_identifier": "teknium/openhermes",
+  "revision": "main",
+  "dataset_card_license": "Apache-2.0",
+  "license_verification_status": "verified",
+  "provenance_status": "verified",
+  "upstream_provenance": "Aggregated open instruction tuning dataset by Teknium under Apache-2.0",
+  "classification": "training_candidate",
+  "sample_count": 100,
+  "approved_training_examples": 100,
+  "notes": "Instruction-following code generation tasks independently verified as suitable for training."
+}

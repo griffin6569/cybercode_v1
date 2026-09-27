@@ -1,0 +1,54 @@
+{
+  "phase": "10.1",
+  "status": "pre_audit",
+  "datasets_found": [
+    "cybercode_curated_dev",
+    "secbench-hf/SecBench",
+    "SWE-bench/SWE-bench",
+    "OpenHermes-Code-Sample",
+    "candidate_unknown_license_db"
+  ],
+  "examples_found": 420,
+  "training_candidate_examples_found": 420,
+  "evaluation_examples_found": 0,
+  "unknown_review_examples_found": 50,
+  "license_findings": [
+    {
+      "dataset_id": "secbench-hf/SecBench",
+      "declared_license": "MIT",
+      "status": "dataset_license_declared_underlying_unverified"
+    },
+    {
+      "dataset_id": "SWE-bench/SWE-bench",
+      "declared_license": "MIT",
+      "status": "dataset_license_declared_underlying_repo_licenses_unverified"
+    },
+    {
+      "dataset_id": "OpenHermes-Code-Sample",
+      "declared_license": "Apache-2.0",
+      "status": "dataset_license_declared_verified"
+    },
+    {
+      "dataset_id": "candidate_unknown_license_db",
+      "declared_license": "unknown",
+      "status": "unverified_license"
+    }
+  ],
+  "provenance_findings": [
+    "secbench-hf/SecBench: benchmark dataset containing security evaluation items",
+    "SWE-bench/SWE-bench: coding agent evaluation benchmark dataset",
+    "OpenHermes-Code-Sample: code instruction dataset cleared for training",
+    "candidate_unknown_license_db: missing clear source and license"
+  ],
+  "benchmark_findings": [
+    "secbench-hf/SecBench items present in training file v0.2 (100 items)",
+    "SWE-bench/SWE-bench items present in training file v0.2 (100 items)"
+  ],
+  "duplicate_findings": [],
+  "pii_secret_findings": [],
+  "issues": [
+    "SecBench benchmark dataset included in training corpus v0.2",
+    "SWE-bench benchmark dataset included in training corpus v0.2",
+    "Dataset-level licenses used without separate underlying content/repo license verification"
+  ]
+}

@@ -1,0 +1,802 @@
+[
+  {
+    "instance_id": "swe_bench_001",
+    "repository": "django/django",
+    "base_commit": "commit_sha_0001",
+    "repository_license_if_available": "BSD-3-Clause",
+    "license_source": "repository_metadata_file",
+    "license_status": "declared"
+  },
+  {
+    "instance_id": "swe_bench_002",
+    "repository": "astropy/astropy",
+    "base_commit": "commit_sha_0002",
+    "repository_license_if_available": "BSD-3-Clause",
+    "license_source": "repository_metadata_file",
+    "license_status": "declared"
+  },
+  {
+    "instance_id": "swe_bench_003",
+    "repository": "sympy/sympy",
+    "base_commit": "commit_sha_0003",
+    "repository_license_if_available": "BSD-3-Clause",
+    "license_source": "repository_metadata_file",
+    "license_status": "declared"
+  },
+  {
+    "instance_id": "swe_bench_004",
+    "repository": "scikit-learn/scikit-learn",
+    "base_commit": "commit_sha_0004",
+    "repository_license_if_available": "BSD-3-Clause",
+    "license_source": "repository_metadata_file",
+    "license_status": "declared"
+  },
+  {
+    "instance_id": "swe_bench_005",
+    "repository": "matplotlib/matplotlib",
+    "base_commit": "commit_sha_0005",
+    "repository_license_if_available": "PSF/BSD",
+    "license_source": "repository_metadata_file",
+    "license_status": "declared"
+  },
+  {
+    "instance_id": "swe_bench_006",
+    "repository": "requests/requests",
+    "base_commit": "commit_sha_0006",
+    "repository_license_if_available": "Apache-2.0",
+    "license_source": "repository_metadata_file",
+    "license_status": "declared"
+  },
+  {
+    "instance_id": "swe_bench_007",
+    "repository": "flask/flask",
+    "base_commit": "commit_sha_0007",
+    "repository_license_if_available": "BSD-3-Clause",
+    "license_source": "repository_metadata_file",
+    "license_status": "declared"
+  },
+  {
+    "instance_id": "swe_bench_008",
+    "repository": "pytest-dev/pytest",
+    "base_commit": "commit_sha_0008",
+    "repository_license_if_available": "MIT",
+    "license_source": "repository_metadata_file",
+    "license_status": "declared"
+  },
+  {
+    "instance_id": "swe_bench_009",
+    "repository": "sphinx-doc/sphinx",
+    "base_commit": "commit_sha_0009",
+    "repository_license_if_available": "BSD-2-Clause",
+    "license_source": "repository_metadata_file",
+    "license_status": "declared"
+  },
+  {
+    "instance_id": "swe_bench_010",
+    "repository": "psf/black",
+    "base_commit": "commit_sha_0010",
+    "repository_license_if_available": "MIT",
+    "license_source": "repository_metadata_file",
+    "license_status": "declared"
+  },
+  {
+    "instance_id": "swe_bench_011",
+    "repository": "django/django",
+    "base_commit": "commit_sha_0011",
+    "repository_license_if_available": "BSD-3-Clause",
+    "license_source": "repository_metadata_file",
+    "license_status": "declared"
+  },
+  {
+    "instance_id": "swe_bench_012",
+    "repository": "astropy/astropy",
+    "base_commit": "commit_sha_0012",
+    "repository_license_if_available": "BSD-3-Clause",
+    "license_source": "repository_metadata_file",
+    "license_status": "declared"
+  },
+  {
+    "instance_id": "swe_bench_013",
+    "repository": "sympy/sympy",
+    "base_commit": "commit_sha_0013",
+    "repository_license_if_available": "BSD-3-Clause",
+    "license_source": "repository_metadata_file",
+    "license_status": "declared"
+  },
+  {
+    "instance_id": "swe_bench_014",
+    "repository": "scikit-learn/scikit-learn",
+    "base_commit": "commit_sha_0014",
+    "repository_license_if_available": "BSD-3-Clause",
+    "license_source": "repository_metadata_file",
+    "license_status": "declared"
+  },
+  {
+    "instance_id": "swe_bench_015",
+    "repository": "matplotlib/matplotlib",
+    "base_commit": "commit_sha_0015",
+    "repository_license_if_available": "PSF/BSD",
+    "license_source": "repository_metadata_file",
+    "license_status": "declared"
+  },
+  {
+    "instance_id": "swe_bench_016",
+    "repository": "requests/requests",
+    "base_commit": "commit_sha_0016",
+    "repository_license_if_available": "Apache-2.0",
+    "license_source": "repository_metadata_file",
+    "license_status": "declared"
+  },
+  {
+    "instance_id": "swe_bench_017",
+    "repository": "flask/flask",
+    "base_commit": "commit_sha_0017",
+    "repository_license_if_available": "BSD-3-Clause",
+    "license_source": "repository_metadata_file",
+    "license_status": "declared"
+  },
+  {
+    "instance_id": "swe_bench_018",
+    "repository": "pytest-dev/pytest",
+    "base_commit": "commit_sha_0018",
+    "repository_license_if_available": "MIT",
+    "license_source": "repository_metadata_file",
+    "license_status": "declared"
+  },
+  {
+    "instance_id": "swe_bench_019",
+    "repository": "sphinx-doc/sphinx",
+    "base_commit": "commit_sha_0019",
+    "repository_license_if_available": "BSD-2-Clause",
+    "license_source": "repository_metadata_file",
+    "license_status": "declared"
+  },
+  {
+    "instance_id": "swe_bench_020",
+    "repository": "psf/black",
+    "base_commit": "commit_sha_0020",
+    "repository_license_if_available": "MIT",
+    "license_source": "repository_metadata_file",
+    "license_status": "declared"
+  },
+  {
+    "instance_id": "swe_bench_021",
+    "repository": "django/django",
+    "base_commit": "commit_sha_0021",
+    "repository_license_if_available": "BSD-3-Clause",
+    "license_source": "repository_metadata_file",
+    "license_status": "declared"
+  },
+  {
+    "instance_id": "swe_bench_022",
+    "repository": "astropy/astropy",
+    "base_commit": "commit_sha_0022",
+    "repository_license_if_available": "BSD-3-Clause",
+    "license_source": "repository_metadata_file",
+    "license_status": "declared"
+  },
+  {
+    "instance_id": "swe_bench_023",
+    "repository": "sympy/sympy",
+    "base_commit": "commit_sha_0023",
+    "repository_license_if_available": "BSD-3-Clause",
+    "license_source": "repository_metadata_file",
+    "license_status": "declared"
+  },
+  {
+    "instance_id": "swe_bench_024",
+    "repository": "scikit-learn/scikit-learn",
+    "base_commit": "commit_sha_0024",
+    "repository_license_if_available": "BSD-3-Clause",
+    "license_source": "repository_metadata_file",
+    "license_status": "declared"
+  },
+  {
+    "instance_id": "swe_bench_025",
+    "repository": "matplotlib/matplotlib",
+    "base_commit": "commit_sha_0025",
+    "repository_license_if_available": "PSF/BSD",
+    "license_source": "repository_metadata_file",
+    "license_status": "declared"
+  },
+  {
+    "instance_id": "swe_bench_026",
+    "repository": "requests/requests",
+    "base_commit": "commit_sha_0026",
+    "repository_license_if_available": "Apache-2.0",
+    "license_source": "repository_metadata_file",
+    "license_status": "declared"
+  },
+  {
+    "instance_id": "swe_bench_027",
+    "repository": "flask/flask",
+    "base_commit": "commit_sha_0027",
+    "repository_license_if_available": "BSD-3-Clause",
+    "license_source": "repository_metadata_file",
+    "license_status": "declared"
+  },
+  {
+    "instance_id": "swe_bench_028",
+    "repository": "pytest-dev/pytest",
+    "base_commit": "commit_sha_0028",
+    "repository_license_if_available": "MIT",
+    "license_source": "repository_metadata_file",
+    "license_status": "declared"
+  },
+  {
+    "instance_id": "swe_bench_029",
+    "repository": "sphinx-doc/sphinx",
+    "base_commit": "commit_sha_0029",
+    "repository_license_if_available": "BSD-2-Clause",
+    "license_source": "repository_metadata_file",
+    "license_status": "declared"
+  },
+  {
+    "instance_id": "swe_bench_030",
+    "repository": "psf/black",
+    "base_commit": "commit_sha_0030",
+    "repository_license_if_available": "MIT",
+    "license_source": "repository_metadata_file",
+    "license_status": "declared"
+  },
+  {
+    "instance_id": "swe_bench_031",
+    "repository": "django/django",
+    "base_commit": "commit_sha_0031",
+    "repository_license_if_available": "BSD-3-Clause",
+    "license_source": "repository_metadata_file",
+    "license_status": "declared"
+  },
+  {
+    "instance_id": "swe_bench_032",
+    "repository": "astropy/astropy",
+    "base_commit": "commit_sha_0032",
+    "repository_license_if_available": "BSD-3-Clause",
+    "license_source": "repository_metadata_file",
+    "license_status": "declared"
+  },
+  {
+    "instance_id": "swe_bench_033",
+    "repository": "sympy/sympy",
+    "base_commit": "commit_sha_0033",
+    "repository_license_if_available": "BSD-3-Clause",
+    "license_source": "repository_metadata_file",
+    "license_status": "declared"
+  },
+  {
+    "instance_id": "swe_bench_034",
+    "repository": "scikit-learn/scikit-learn",
+    "base_commit": "commit_sha_0034",
+    "repository_license_if_available": "BSD-3-Clause",
+    "license_source": "repository_metadata_file",
+    "license_status": "declared"
+  },
+  {
+    "instance_id": "swe_bench_035",
+    "repository": "matplotlib/matplotlib",
+    "base_commit": "commit_sha_0035",
+    "repository_license_if_available": "PSF/BSD",
+    "license_source": "repository_metadata_file",
+    "license_status": "declared"
+  },
+  {
+    "instance_id": "swe_bench_036",
+    "repository": "requests/requests",
+    "base_commit": "commit_sha_0036",
+    "repository_license_if_available": "Apache-2.0",
+    "license_source": "repository_metadata_file",
+    "license_status": "declared"
+  },
+  {
+    "instance_id": "swe_bench_037",
+    "repository": "flask/flask",
+    "base_commit": "commit_sha_0037",
+    "repository_license_if_available": "BSD-3-Clause",
+    "license_source": "repository_metadata_file",
+    "license_status": "declared"
+  },
+  {
+    "instance_id": "swe_bench_038",
+    "repository": "pytest-dev/pytest",
+    "base_commit": "commit_sha_0038",
+    "repository_license_if_available": "MIT",
+    "license_source": "repository_metadata_file",
+    "license_status": "declared"
+  },
+  {
+    "instance_id": "swe_bench_039",
+    "repository": "sphinx-doc/sphinx",
+    "base_commit": "commit_sha_0039",
+    "repository_license_if_available": "BSD-2-Clause",
+    "license_source": "repository_metadata_file",
+    "license_status": "declared"
+  },
+  {
+    "instance_id": "swe_bench_040",
+    "repository": "psf/black",
+    "base_commit": "commit_sha_0040",
+    "repository_license_if_available": "MIT",
+    "license_source": "repository_metadata_file",
+    "license_status": "declared"
+  },
+  {
+    "instance_id": "swe_bench_041",
+    "repository": "django/django",
+    "base_commit": "commit_sha_0041",
+    "repository_license_if_available": "BSD-3-Clause",
+    "license_source": "repository_metadata_file",
+    "license_status": "declared"
+  },
+  {
+    "instance_id": "swe_bench_042",
+    "repository": "astropy/astropy",
+    "base_commit": "commit_sha_0042",
+    "repository_license_if_available": "BSD-3-Clause",
+    "license_source": "repository_metadata_file",
+    "license_status": "declared"
+  },
+  {
+    "instance_id": "swe_bench_043",
+    "repository": "sympy/sympy",
+    "base_commit": "commit_sha_0043",
+    "repository_license_if_available": "BSD-3-Clause",
+    "license_source": "repository_metadata_file",
+    "license_status": "declared"
+  },
+  {
+    "instance_id": "swe_bench_044",
+    "repository": "scikit-learn/scikit-learn",
+    "base_commit": "commit_sha_0044",
+    "repository_license_if_available": "BSD-3-Clause",
+    "license_source": "repository_metadata_file",
+    "license_status": "declared"
+  },
+  {
+    "instance_id": "swe_bench_045",
+    "repository": "matplotlib/matplotlib",
+    "base_commit": "commit_sha_0045",
+    "repository_license_if_available": "PSF/BSD",
+    "license_source": "repository_metadata_file",
+    "license_status": "declared"
+  },
+  {
+    "instance_id": "swe_bench_046",
+    "repository": "requests/requests",
+    "base_commit": "commit_sha_0046",
+    "repository_license_if_available": "Apache-2.0",
+    "license_source": "repository_metadata_file",
+    "license_status": "declared"
+  },
+  {
+    "instance_id": "swe_bench_047",
+    "repository": "flask/flask",
+    "base_commit": "commit_sha_0047",
+    "repository_license_if_available": "BSD-3-Clause",
+    "license_source": "repository_metadata_file",
+    "license_status": "declared"
+  },
+  {
+    "instance_id": "swe_bench_048",
+    "repository": "pytest-dev/pytest",
+    "base_commit": "commit_sha_0048",
+    "repository_license_if_available": "MIT",
+    "license_source": "repository_metadata_file",
+    "license_status": "declared"
+  },
+  {
+    "instance_id": "swe_bench_049",
+    "repository": "sphinx-doc/sphinx",
+    "base_commit": "commit_sha_0049",
+    "repository_license_if_available": "BSD-2-Clause",
+    "license_source": "repository_metadata_file",
+    "license_status": "declared"
+  },
+  {
+    "instance_id": "swe_bench_050",
+    "repository": "psf/black",
+    "base_commit": "commit_sha_0050",
+    "repository_license_if_available": "MIT",
+    "license_source": "repository_metadata_file",
+    "license_status": "declared"
+  },
+  {
+    "instance_id": "swe_bench_051",
+    "repository": "django/django",
+    "base_commit": "commit_sha_0051",
+    "repository_license_if_available": "BSD-3-Clause",
+    "license_source": "repository_metadata_file",
+    "license_status": "declared"
+  },
+  {
+    "instance_id": "swe_bench_052",
+    "repository": "astropy/astropy",
+    "base_commit": "commit_sha_0052",
+    "repository_license_if_available": "BSD-3-Clause",
+    "license_source": "repository_metadata_file",
+    "license_status": "declared"
+  },
+  {
+    "instance_id": "swe_bench_053",
+    "repository": "sympy/sympy",
+    "base_commit": "commit_sha_0053",
+    "repository_license_if_available": "BSD-3-Clause",
+    "license_source": "repository_metadata_file",
+    "license_status": "declared"
+  },
+  {
+    "instance_id": "swe_bench_054",
+    "repository": "scikit-learn/scikit-learn",
+    "base_commit": "commit_sha_0054",
+    "repository_license_if_available": "BSD-3-Clause",
+    "license_source": "repository_metadata_file",
+    "license_status": "declared"
+  },
+  {
+    "instance_id": "swe_bench_055",
+    "repository": "matplotlib/matplotlib",
+    "base_commit": "commit_sha_0055",
+    "repository_license_if_available": "PSF/BSD",
+    "license_source": "repository_metadata_file",
+    "license_status": "declared"
+  },
+  {
+    "instance_id": "swe_bench_056",
+    "repository": "requests/requests",
+    "base_commit": "commit_sha_0056",
+    "repository_license_if_available": "Apache-2.0",
+    "license_source": "repository_metadata_file",
+    "license_status": "declared"
+  },
+  {
+    "instance_id": "swe_bench_057",
+    "repository": "flask/flask",
+    "base_commit": "commit_sha_0057",
+    "repository_license_if_available": "BSD-3-Clause",
+    "license_source": "repository_metadata_file",
+    "license_status": "declared"
+  },
+  {
+    "instance_id": "swe_bench_058",
+    "repository": "pytest-dev/pytest",
+    "base_commit": "commit_sha_0058",
+    "repository_license_if_available": "MIT",
+    "license_source": "repository_metadata_file",
+    "license_status": "declared"
+  },
+  {
+    "instance_id": "swe_bench_059",
+    "repository": "sphinx-doc/sphinx",
+    "base_commit": "commit_sha_0059",
+    "repository_license_if_available": "BSD-2-Clause",
+    "license_source": "repository_metadata_file",
+    "license_status": "declared"
+  },
+  {
+    "instance_id": "swe_bench_060",
+    "repository": "psf/black",
+    "base_commit": "commit_sha_0060",
+    "repository_license_if_available": "MIT",
+    "license_source": "repository_metadata_file",
+    "license_status": "declared"
+  },
+  {
+    "instance_id": "swe_bench_061",
+    "repository": "django/django",
+    "base_commit": "commit_sha_0061",
+    "repository_license_if_available": "BSD-3-Clause",
+    "license_source": "repository_metadata_file",
+    "license_status": "declared"
+  },
+  {
+    "instance_id": "swe_bench_062",
+    "repository": "astropy/astropy",
+    "base_commit": "commit_sha_0062",
+    "repository_license_if_available": "BSD-3-Clause",
+    "license_source": "repository_metadata_file",
+    "license_status": "declared"
+  },
+  {
+    "instance_id": "swe_bench_063",
+    "repository": "sympy/sympy",
+    "base_commit": "commit_sha_0063",
+    "repository_license_if_available": "BSD-3-Clause",
+    "license_source": "repository_metadata_file",
+    "license_status": "declared"
+  },
+  {
+    "instance_id": "swe_bench_064",
+    "repository": "scikit-learn/scikit-learn",
+    "base_commit": "commit_sha_0064",
+    "repository_license_if_available": "BSD-3-Clause",
+    "license_source": "repository_metadata_file",
+    "license_status": "declared"
+  },
+  {
+    "instance_id": "swe_bench_065",
+    "repository": "matplotlib/matplotlib",
+    "base_commit": "commit_sha_0065",
+    "repository_license_if_available": "PSF/BSD",
+    "license_source": "repository_metadata_file",
+    "license_status": "declared"
+  },
+  {
+    "instance_id": "swe_bench_066",
+    "repository": "requests/requests",
+    "base_commit": "commit_sha_0066",
+    "repository_license_if_available": "Apache-2.0",
+    "license_source": "repository_metadata_file",
+    "license_status": "declared"
+  },
+  {
+    "instance_id": "swe_bench_067",
+    "repository": "flask/flask",
+    "base_commit": "commit_sha_0067",
+    "repository_license_if_available": "BSD-3-Clause",
+    "license_source": "repository_metadata_file",
+    "license_status": "declared"
+  },
+  {
+    "instance_id": "swe_bench_068",
+    "repository": "pytest-dev/pytest",
+    "base_commit": "commit_sha_0068",
+    "repository_license_if_available": "MIT",
+    "license_source": "repository_metadata_file",
+    "license_status": "declared"
+  },
+  {
+    "instance_id": "swe_bench_069",
+    "repository": "sphinx-doc/sphinx",
+    "base_commit": "commit_sha_0069",
+    "repository_license_if_available": "BSD-2-Clause",
+    "license_source": "repository_metadata_file",
+    "license_status": "declared"
+  },
+  {
+    "instance_id": "swe_bench_070",
+    "repository": "psf/black",
+    "base_commit": "commit_sha_0070",
+    "repository_license_if_available": "MIT",
+    "license_source": "repository_metadata_file",
+    "license_status": "declared"
+  },
+  {
+    "instance_id": "swe_bench_071",
+    "repository": "django/django",
+    "base_commit": "commit_sha_0071",
+    "repository_license_if_available": "BSD-3-Clause",
+    "license_source": "repository_metadata_file",
+    "license_status": "declared"
+  },
+  {
+    "instance_id": "swe_bench_072",
+    "repository": "astropy/astropy",
+    "base_commit": "commit_sha_0072",
+    "repository_license_if_available": "BSD-3-Clause",
+    "license_source": "repository_metadata_file",
+    "license_status": "declared"
+  },
+  {
+    "instance_id": "swe_bench_073",
+    "repository": "sympy/sympy",
+    "base_commit": "commit_sha_0073",
+    "repository_license_if_available": "BSD-3-Clause",
+    "license_source": "repository_metadata_file",
+    "license_status": "declared"
+  },
+  {
+    "instance_id": "swe_bench_074",
+    "repository": "scikit-learn/scikit-learn",
+    "base_commit": "commit_sha_0074",
+    "repository_license_if_available": "BSD-3-Clause",
+    "license_source": "repository_metadata_file",
+    "license_status": "declared"
+  },
+  {
+    "instance_id": "swe_bench_075",
+    "repository": "matplotlib/matplotlib",
+    "base_commit": "commit_sha_0075",
+    "repository_license_if_available": "PSF/BSD",
+    "license_source": "repository_metadata_file",
+    "license_status": "declared"
+  },
+  {
+    "instance_id": "swe_bench_076",
+    "repository": "requests/requests",
+    "base_commit": "commit_sha_0076",
+    "repository_license_if_available": "Apache-2.0",
+    "license_source": "repository_metadata_file",
+    "license_status": "declared"
+  },
+  {
+    "instance_id": "swe_bench_077",
+    "repository": "flask/flask",
+    "base_commit": "commit_sha_0077",
+    "repository_license_if_available": "BSD-3-Clause",
+    "license_source": "repository_metadata_file",
+    "license_status": "declared"
+  },
+  {
+    "instance_id": "swe_bench_078",
+    "repository": "pytest-dev/pytest",
+    "base_commit": "commit_sha_0078",
+    "repository_license_if_available": "MIT",
+    "license_source": "repository_metadata_file",
+    "license_status": "declared"
+  },
+  {
+    "instance_id": "swe_bench_079",
+    "repository": "sphinx-doc/sphinx",
+    "base_commit": "commit_sha_0079",
+    "repository_license_if_available": "BSD-2-Clause",
+    "license_source": "repository_metadata_file",
+    "license_status": "declared"
+  },
+  {
+    "instance_id": "swe_bench_080",
+    "repository": "psf/black",
+    "base_commit": "commit_sha_0080",
+    "repository_license_if_available": "MIT",
+    "license_source": "repository_metadata_file",
+    "license_status": "declared"
+  },
+  {
+    "instance_id": "swe_bench_081",
+    "repository": "django/django",
+    "base_commit": "commit_sha_0081",
+    "repository_license_if_available": "BSD-3-Clause",
+    "license_source": "repository_metadata_file",
+    "license_status": "declared"
+  },
+  {
+    "instance_id": "swe_bench_082",
+    "repository": "astropy/astropy",
+    "base_commit": "commit_sha_0082",
+    "repository_license_if_available": "BSD-3-Clause",
+    "license_source": "repository_metadata_file",
+    "license_status": "declared"
+  },
+  {
+    "instance_id": "swe_bench_083",
+    "repository": "sympy/sympy",
+    "base_commit": "commit_sha_0083",
+    "repository_license_if_available": "BSD-3-Clause",
+    "license_source": "repository_metadata_file",
+    "license_status": "declared"
+  },
+  {
+    "instance_id": "swe_bench_084",
+    "repository": "scikit-learn/scikit-learn",
+    "base_commit": "commit_sha_0084",
+    "repository_license_if_available": "BSD-3-Clause",
+    "license_source": "repository_metadata_file",
+    "license_status": "declared"
+  },
+  {
+    "instance_id": "swe_bench_085",
+    "repository": "matplotlib/matplotlib",
+    "base_commit": "commit_sha_0085",
+    "repository_license_if_available": "PSF/BSD",
+    "license_source": "repository_metadata_file",
+    "license_status": "declared"
+  },
+  {
+    "instance_id": "swe_bench_086",
+    "repository": "requests/requests",
+    "base_commit": "commit_sha_0086",
+    "repository_license_if_available": "Apache-2.0",
+    "license_source": "repository_metadata_file",
+    "license_status": "declared"
+  },
+  {
+    "instance_id": "swe_bench_087",
+    "repository": "flask/flask",
+    "base_commit": "commit_sha_0087",
+    "repository_license_if_available": "BSD-3-Clause",
+    "license_source": "repository_metadata_file",
+    "license_status": "declared"
+  },
+  {
+    "instance_id": "swe_bench_088",
+    "repository": "pytest-dev/pytest",
+    "base_commit": "commit_sha_0088",
+    "repository_license_if_available": "MIT",
+    "license_source": "repository_metadata_file",
+    "license_status": "declared"
+  },
+  {
+    "instance_id": "swe_bench_089",
+    "repository": "sphinx-doc/sphinx",
+    "base_commit": "commit_sha_0089",
+    "repository_license_if_available": "BSD-2-Clause",
+    "license_source": "repository_metadata_file",
+    "license_status": "declared"
+  },
+  {
+    "instance_id": "swe_bench_090",
+    "repository": "psf/black",
+    "base_commit": "commit_sha_0090",
+    "repository_license_if_available": "MIT",
+    "license_source": "repository_metadata_file",
+    "license_status": "declared"
+  },
+  {
+    "instance_id": "swe_bench_091",
+    "repository": "django/django",
+    "base_commit": "commit_sha_0091",
+    "repository_license_if_available": "BSD-3-Clause",
+    "license_source": "repository_metadata_file",
+    "license_status": "declared"
+  },
+  {
+    "instance_id": "swe_bench_092",
+    "repository": "astropy/astropy",
+    "base_commit": "commit_sha_0092",
+    "repository_license_if_available": "BSD-3-Clause",
+    "license_source": "repository_metadata_file",
+    "license_status": "declared"
+  },
+  {
+    "instance_id": "swe_bench_093",
+    "repository": "sympy/sympy",
+    "base_commit": "commit_sha_0093",
+    "repository_license_if_available": "BSD-3-Clause",
+    "license_source": "repository_metadata_file",
+    "license_status": "declared"
+  },
+  {
+    "instance_id": "swe_bench_094",
+    "repository": "scikit-learn/scikit-learn",
+    "base_commit": "commit_sha_0094",
+    "repository_license_if_available": "BSD-3-Clause",
+    "license_source": "repository_metadata_file",
+    "license_status": "declared"
+  },
+  {
+    "instance_id": "swe_bench_095",
+    "repository": "matplotlib/matplotlib",
+    "base_commit": "commit_sha_0095",
+    "repository_license_if_available": "PSF/BSD",
+    "license_source": "repository_metadata_file",
+    "license_status": "declared"
+  },
+  {
+    "instance_id": "swe_bench_096",
+    "repository": "requests/requests",
+    "base_commit": "commit_sha_0096",
+    "repository_license_if_available": "Apache-2.0",
+    "license_source": "repository_metadata_file",
+    "license_status": "declared"
+  },
+  {
+    "instance_id": "swe_bench_097",
+    "repository": "flask/flask",
+    "base_commit": "commit_sha_0097",
+    "repository_license_if_available": "BSD-3-Clause",
+    "license_source": "repository_metadata_file",
+    "license_status": "declared"
+  },
+  {
+    "instance_id": "swe_bench_098",
+    "repository": "pytest-dev/pytest",
+    "base_commit": "commit_sha_0098",
+    "repository_license_if_available": "MIT",
+    "license_source": "repository_metadata_file",
+    "license_status": "declared"
+  },
+  {
+    "instance_id": "swe_bench_099",
+    "repository": "sphinx-doc/sphinx",
+    "base_commit": "commit_sha_0099",
+    "repository_license_if_available": "BSD-2-Clause",
+    "license_source": "repository_metadata_file",
+    "license_status": "declared"
+  },
+  {
+    "instance_id": "swe_bench_100",
+    "repository": "psf/black",
+    "base_commit": "commit_sha_0100",
+    "repository_license_if_available": "MIT",
+    "license_source": "repository_metadata_file",
+    "license_status": "declared"
+  }
+]

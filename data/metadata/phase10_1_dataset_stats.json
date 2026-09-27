@@ -1,0 +1,36 @@
+{
+  "total_examples": 470,
+  "training_candidates": 200,
+  "validation_candidates": 20,
+  "evaluation_only": 200,
+  "review": 50,
+  "excluded": 0,
+  "by_source": {
+    "cybercode_curated_dev": 120,
+    "secbench-hf/SecBench": 100,
+    "SWE-bench/SWE-bench": 100,
+    "OpenHermes-Code-Sample": 100,
+    "candidate_unknown_license_db": 50
+  },
+  "by_task_type": {
+    "code_generation": 120,
+    "agent_trajectories": 120,
+    "authorized_lab": 20,
+    "debugging": 20,
+    "security_review": 20,
+    "vulnerability_remediation": 120
+  },
+  "by_authorization": {
+    "defensive": 280,
+    "authorized": 120,
+    "explicit": 20
+  },
+  "by_license_status": {
+    "verified": 420,
+    "unverified": 50
+  },
+  "by_provenance_status": {
+    "verified": 420,
+    "unclear": 50
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "dataset_id": "candidate_unknown_license_db",
+  "revision": "main",
+  "license": "unknown",
+  "classification": "review",
+  "reason": "license_unknown",
+  "sample_count": 50
+}
