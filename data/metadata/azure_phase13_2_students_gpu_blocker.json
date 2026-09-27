@@ -1,0 +1,42 @@
+{
+  "phase": "13_2",
+  "status": "STUDENT_SUBSCRIPTION_GPU_BLOCKED",
+  "timestamp": "2026-09-27T20:25:00Z",
+  "subscription": {
+    "name": "Azure for Students",
+    "subscription_id": "4d6ad347-4459-4206-ac7c-54cc59637a4a",
+    "tenant_id": "20a12a57-3641-40d0-824b-f0e42f308ce6",
+    "offer_type": "Azure for Students (MS-AZR-0170P)"
+  },
+  "workspace": {
+    "resource_group": "cybercodemini-rg",
+    "workspace_name": "cybercodemini-ml",
+    "workspace_region": "southafricanorth"
+  },
+  "gpu_sku": "Standard_NV36ads_A10_v5",
+  "quota_family": "StandardNVADSA10v5Family",
+  "current_quota_vcpus": 0,
+  "required_quota_vcpus": 36,
+  "user_rbac_role": "Owner",
+  "quota_api_result": "ResourceNotAvailableForOffer",
+  "portal_result": "Quota adjustment disabled for Azure for Students offer; empty quota blade",
+  "subscription_eligibility_finding": "Azure for Students offer strictly restricts GPU (N-series) quota allocation. User has full Owner RBAC, confirming the blocker is 100% Azure Subscription Offer Policy restriction.",
+  "alternative_options": [
+    "Option 1: Submit explicit Azure Support Ticket under 'Service and subscription limits (quotas)' requesting manual student exception for 36 vCPUs of StandardNVADSA10v5Family in southafricanorth.",
+    "Option 2: Upgrade subscription to Pay-As-You-Go (unlocks GPU quota requests while retaining unused student credit for billable usage).",
+    "Option 3: Associate account with an institutional / enterprise Azure sponsorship subscription."
+  ],
+  "cost_protection_status": {
+    "subscription_changed": false,
+    "gpu_compute_created": 0,
+    "vms_created": 0,
+    "aml_jobs_submitted": 0,
+    "azure_credit_spent_usd": 0.0
+  },
+  "frozen_dataset": {
+    "version": "v0.3.0",
+    "sha256": "c58c523cd8a7b6316054ca7289f98a427e4d95611ab4a27b024033c304314df5"
+  },
+  "git_commit": "7034861",
+  "test_count": "152/152 passed"
+}
