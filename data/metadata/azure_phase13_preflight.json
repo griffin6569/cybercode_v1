@@ -1,0 +1,88 @@
+{
+  "phase": "13_preflight",
+  "status": "QUOTA_REQUEST_REQUIRED",
+  "timestamp": "2026-09-27T19:30:00Z",
+  "subscription": {
+    "name": "Azure for Students",
+    "subscription_id": "4d6ad347-4459-4206-ac7c-54cc59637a4a",
+    "tenant_id": "20a12a57-3641-40d0-824b-f0e42f308ce6"
+  },
+  "workspace": {
+    "resource_group": "cybercodemini-rg",
+    "resource_group_location": "eastus",
+    "workspace_name": "cybercodemini-ml",
+    "workspace_region": "southafricanorth"
+  },
+  "region_policy": {
+    "allowed_regions": [
+      "indiasouthcentral",
+      "southafricanorth",
+      "italynorth",
+      "austriaeast",
+      "uaenorth"
+    ]
+  },
+  "providers": {
+    "Microsoft.Compute": "Registered",
+    "Microsoft.MachineLearningServices": "Registered",
+    "Microsoft.Quota": "Registered"
+  },
+  "gpu_sku_availability": {
+    "target_sku": "Standard_NV36ads_A10_v5",
+    "gpu_family": "StandardNVADSA10v5Family",
+    "gpus_per_node": 1,
+    "gpu_type": "NVIDIA A10 (24GB VRAM)",
+    "vcpus_per_node": 36
+  },
+  "current_quota": {
+    "resource_name": "StandardNVADSA10v5Family",
+    "localized_name": "Standard NVADSA10v5 Family Cluster Dedicated vCPUs",
+    "is_quota_applicable": true,
+    "limit_value": 0,
+    "unit": "Count"
+  },
+  "existing_quota_requests": [],
+  "minimum_quota_required": {
+    "target_vcpus": 36,
+    "explanation": "1 instance of Standard_NV36ads_A10_v5 requires 36 dedicated vCPUs in StandardNVADSA10v5Family"
+  },
+  "quota_increase_possible": {
+    "requestable": true,
+    "portal_url": "https://portal.azure.com/#view/Microsoft_Azure_Capacity/QuotaMenuBlade/~/myQuotas",
+    "method": "Azure Portal / Quotas Blade or Support Ticket"
+  },
+  "cost_and_pricing": {
+    "hourly_price_usd": 1.85,
+    "currency": "USD",
+    "azure_for_students_credit_applicable": true,
+    "azure_ml_overhead": 0.0,
+    "estimated_pilot_duration_hours": 0.35,
+    "estimated_pilot_cost_usd": 0.65,
+    "non_compute_monthly_cost_usd": 0.05
+  },
+  "planned_compute_config": {
+    "name": "cybercode-a10-compute",
+    "type": "amlcompute",
+    "size": "Standard_NV36ads_A10_v5",
+    "location": "southafricanorth",
+    "min_instances": 0,
+    "max_instances": 1,
+    "idle_time_before_scale_down": 120
+  },
+  "phase13_pilot_config": {
+    "dataset_version": "v0.3.0",
+    "training_file": "data/frozen/v0.3.0/training.jsonl",
+    "training_sha256": "c58c523cd8a7b6316054ca7289f98a427e4d95611ab4a27b024033c304314df5",
+    "base_model": "Qwen/Qwen2.5-Coder-1.5B-Instruct",
+    "training_method": "QLoRA 4-bit NF4 double quant",
+    "lora_r": 16,
+    "lora_alpha": 32,
+    "lora_dropout": 0.05,
+    "max_retries": 0
+  },
+  "safety_verifications": {
+    "azure_resources_created": 0,
+    "azure_training_jobs_submitted": 0,
+    "azure_credit_spent_usd": 0.0
+  }
+}
