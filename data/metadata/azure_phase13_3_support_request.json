@@ -1,0 +1,41 @@
+{
+  "phase": "13_3",
+  "status": "SUPPORT_REQUEST_DRAFT_READY",
+  "timestamp": "2026-09-27T20:32:00Z",
+  "subscription": {
+    "name": "Azure for Students",
+    "subscription_id": "4d6ad347-4459-4206-ac7c-54cc59637a4a",
+    "offer_type": "MS-AZR-0170P"
+  },
+  "workspace": {
+    "resource_group": "cybercodemini-rg",
+    "workspace_name": "cybercodemini-ml",
+    "workspace_region": "southafricanorth"
+  },
+  "support_request_details": {
+    "problem_type": "Service and subscription limits (quotas)",
+    "service": "Azure Machine Learning",
+    "region": "South Africa North",
+    "quota_family": "StandardNVADSA10v5Family",
+    "quota_display_name": "Standard NVADSA10v5 Family Cluster Dedicated vCPUs",
+    "target_gpu_sku": "Standard_NV36ads_A10_v5",
+    "current_quota_vcpus": 0,
+    "requested_quota_vcpus": 36,
+    "case_number": null,
+    "submission_timestamp": null,
+    "factual_request_body": "I am using an Azure for Students subscription for an educational machine-learning project called CyberCodeMini. I am requesting a quota exception for one Azure Machine Learning GPU node in South Africa North.\n\nThe requested VM size is Standard_NV36ads_A10_v5, requiring 36 vCPUs from the StandardNVADSA10v5Family quota.\n\nThe current quota is 0 vCPUs. The Azure CLI quota API returns ResourceNotAvailableForOffer when attempting to request an increase, and the Azure Portal does not provide an adjustable quota for this Azure for Students subscription.\n\nMy account has Owner RBAC permissions on the subscription, so this does not appear to be an RBAC permission issue.\n\nI am requesting whether Microsoft can grant a manual exception or otherwise enable 36 vCPUs for this GPU family for the Azure for Students subscription.\n\nThis request is for a single controlled educational training experiment. No GPU compute resources or training jobs have been created yet, and no Azure credit has been consumed.\n\nIf this quota cannot be granted under the Azure for Students offer, please confirm that explicitly and advise whether there is an eligible Azure subscription option that would allow the educational workload."
+  },
+  "cost_protection_status": {
+    "subscription_changed": false,
+    "gpu_compute_created": 0,
+    "vms_created": 0,
+    "aml_jobs_submitted": 0,
+    "azure_credit_spent_usd": 0.0
+  },
+  "frozen_dataset": {
+    "version": "v0.3.0",
+    "sha256": "c58c523cd8a7b6316054ca7289f98a427e4d95611ab4a27b024033c304314df5"
+  },
+  "git_commit": "pending",
+  "test_count": "pending"
+}
