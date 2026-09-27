@@ -36,6 +36,6 @@
     "version": "v0.3.0",
     "sha256": "c58c523cd8a7b6316054ca7289f98a427e4d95611ab4a27b024033c304314df5"
   },
-  "git_commit": "pending",
-  "test_count": "pending"
+  "git_commit": "6e8f2ad",
+  "test_count": "162/162 passed"
 }
