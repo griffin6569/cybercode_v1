@@ -1,0 +1,76 @@
+{
+  "dataset_version": "v0.3.0",
+  "creation_timestamp": "2026-09-27T14:39:56.157749+00:00",
+  "training_file": "data/frozen/v0.3.0/training.jsonl",
+  "validation_file": "data/frozen/v0.3.0/validation.jsonl",
+  "row_counts": {
+    "training": 900,
+    "validation": 90,
+    "secbench_evaluation": 100,
+    "swebench_evaluation": 100,
+    "review": 50
+  },
+  "checksums": {
+    "training_sha256": "c58c523cd8a7b6316054ca7289f98a427e4d95611ab4a27b024033c304314df5",
+    "validation_sha256": "f56733bbe427923f28e40ce080d8b3c46e4ad91c2e426e178a167ec680efa81b",
+    "secbench_sha256": "5be0a2774de78039d8bab0c8b2e213a45dd840c6099bbdb8fcc8069c527c1817",
+    "swebench_sha256": "48219a1d09f5ed62d4e3441e1408b2853c8419c9de1e8256adc51cbb9b53e819",
+    "review_sha256": "170630fe52cc9d67fce1f3724bf811763e2cf9b7f05f4b8483ee89602a1d1cb2"
+  },
+  "source_distribution": {
+    "cybercode_curated_dev": 100,
+    "OpenHermes-Code-Sample": 100,
+    "cybercode_curated_vulnerability_remediation": 160,
+    "cybercode_curated_agent_trajectories": 130,
+    "cybercode_curated_security_review_and_reasoning": 150,
+    "cybercode_curated_debugging_and_refactoring": 140,
+    "cybercode_curated_authorized_labs": 60,
+    "CodeLlama-Instruct-Code-Samples": 60
+  },
+  "license_distribution": {
+    "MIT": 740,
+    "Apache-2.0": 100,
+    "Llama-2": 60
+  },
+  "capability_distribution": {
+    "code_generation": 174,
+    "agent_trajectories": 17,
+    "authorized_lab": 76,
+    "debugging": 62,
+    "security_review": 94,
+    "vulnerability_remediation": 178,
+    "agent_tool_use": 130,
+    "vulnerability_detection": 75,
+    "refactoring": 47,
+    "test_generation": 47
+  },
+  "security_authorization_distribution": {
+    "defensive": 477,
+    "authorized": 207,
+    "explicit": 16,
+    "not_applicable": 200
+  },
+  "difficulty_distribution": {
+    "medium": 840,
+    "hard": 60
+  },
+  "provenance_coverage": "100.0%",
+  "schema_validation_result": "PASS (990/990 rows valid)",
+  "duplicate_validation_result": "PASS (0 exact/normalized duplicates)",
+  "quality_statistics": {
+    "mean_score": 97.78,
+    "median_score": 100.0,
+    "below_threshold_count": 0
+  },
+  "model_target": "Qwen/Qwen2.5-Coder-1.5B-Instruct",
+  "tokenizer_target": "Qwen/Qwen2.5-Coder-1.5B-Instruct",
+  "max_sequence_length": 2048,
+  "random_seed": 42,
+  "git": {
+    "commit": "unknown",
+    "branch": "unknown",
+    "status": "clean"
+  },
+  "python_version": "3.12.10",
+  "platform": "Windows-11-10.0.26200-SP0"
+}

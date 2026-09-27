@@ -1,0 +1,31 @@
+{
+  "base_model": "Qwen/Qwen2.5-Coder-1.5B-Instruct",
+  "training_method": "LoRA/QLoRA",
+  "lora_parameters": {
+    "r": 16,
+    "alpha": 32,
+    "dropout": 0.05,
+    "target_modules": [
+      "q_proj",
+      "k_proj",
+      "v_proj",
+      "o_proj",
+      "gate_proj",
+      "up_proj",
+      "down_proj"
+    ]
+  },
+  "hyperparameters": {
+    "epochs": 3,
+    "learning_rate": 0.0002,
+    "batch_size": 4,
+    "gradient_accumulation_steps": 4,
+    "warmup_ratio": 0.05,
+    "weight_decay": 0.01,
+    "max_seq_length": 2048,
+    "loss_masking_strategy": "assistant_and_tool_outputs"
+  },
+  "checksums": {
+    "training_config_sha256": "42d5d53115f87efff5f32ca76b5ad26e11b7231558fab4a58fc42a667b1d2cc8"
+  }
+}

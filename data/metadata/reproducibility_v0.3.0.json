@@ -1,0 +1,21 @@
+{
+  "phase": "12",
+  "version": "v0.3.0",
+  "random_seed": 42,
+  "git": {
+    "commit": "unknown",
+    "branch": "unknown",
+    "status": "clean"
+  },
+  "dataset_checksums": {
+    "training_sha256": "c58c523cd8a7b6316054ca7289f98a427e4d95611ab4a27b024033c304314df5",
+    "validation_sha256": "f56733bbe427923f28e40ce080d8b3c46e4ad91c2e426e178a167ec680efa81b"
+  },
+  "model_identifier": "Qwen/Qwen2.5-Coder-1.5B-Instruct",
+  "tokenizer_identifier": "Qwen/Qwen2.5-Coder-1.5B-Instruct",
+  "environment": {
+    "python": "3.12.10",
+    "operating_system": "Windows-11-10.0.26200-SP0",
+    "cpu_architecture": "AMD64"
+  }
+}

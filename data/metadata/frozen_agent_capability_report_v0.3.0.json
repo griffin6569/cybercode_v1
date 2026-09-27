@@ -1,0 +1,19 @@
+{
+  "dataset_version": "v0.3.0",
+  "total_agent_examples": 147,
+  "structural_tiers": {
+    "simple_tool_use": 0,
+    "single_step_tool_use": 0,
+    "multi_step_tool_use": 0,
+    "full_agent_trajectory": 147
+  },
+  "trajectories_breakdown": {
+    "repository_search": 147,
+    "file_inspection": 147,
+    "editing": 147,
+    "test_execution": 147,
+    "debugging_loops": 147,
+    "verification_loops": 147
+  },
+  "percentage_of_training_corpus": "16.3%"
+}
