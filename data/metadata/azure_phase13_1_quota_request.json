@@ -1,0 +1,29 @@
+{
+  "phase": "13_1",
+  "status": "MANUAL_QUOTA_REQUEST_REQUIRED",
+  "timestamp": "2026-09-27T20:00:00Z",
+  "subscription": {
+    "name": "Azure for Students",
+    "subscription_id": "4d6ad347-4459-4206-ac7c-54cc59637a4a",
+    "tenant_id": "20a12a57-3641-40d0-824b-f0e42f308ce6"
+  },
+  "resource_group": "cybercodemini-rg",
+  "workspace": "cybercodemini-ml",
+  "region": "southafricanorth",
+  "target_gpu": "Standard_NV36ads_A10_v5",
+  "quota_family": "StandardNVADSA10v5Family",
+  "previous_quota_vcpus": 0,
+  "requested_quota_vcpus": 36,
+  "request_id": "NONE",
+  "request_state": "ResourceNotAvailableForOffer",
+  "submission_method": "Portal/Support Ticket Required",
+  "portal_quota_url": "https://portal.azure.com/#view/Microsoft_Azure_Capacity/QuotaMenuBlade/~/myQuotas",
+  "gpu_compute_count": 0,
+  "training_job_count": 0,
+  "azure_credit_spent_usd": 0.0,
+  "frozen_dataset_version": "v0.3.0",
+  "frozen_dataset_sha256": "c58c523cd8a7b6316054ca7289f98a427e4d95611ab4a27b024033c304314df5",
+  "git_commit": "21cf23c",
+  "test_count": "148/148 passed",
+  "next_allowed_phase": "MANUAL_QUOTA_REQUEST_REQUIRED"
+}
