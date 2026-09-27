@@ -1,0 +1,54 @@
+{
+  "total_examples": 120,
+  "total_tokens": 69199,
+  "mean_tokens": 576.66,
+  "median_tokens": 556.5,
+  "p95_tokens": 766,
+  "maximum_tokens": 1124,
+  "truncated_examples": 0,
+  "truncation_percentage": 0.0,
+  "categories": {
+    "code_generation": {
+      "count": 20,
+      "total_tokens": 10516,
+      "mean_tokens": 525.8,
+      "median_tokens": 500.0,
+      "maximum_tokens": 1124
+    },
+    "debugging": {
+      "count": 20,
+      "total_tokens": 11331,
+      "mean_tokens": 566.55,
+      "median_tokens": 567.5,
+      "maximum_tokens": 588
+    },
+    "security_review": {
+      "count": 20,
+      "total_tokens": 11352,
+      "mean_tokens": 567.6,
+      "median_tokens": 568.5,
+      "maximum_tokens": 611
+    },
+    "vulnerability_remediation": {
+      "count": 20,
+      "total_tokens": 9651,
+      "mean_tokens": 482.55,
+      "median_tokens": 480.5,
+      "maximum_tokens": 531
+    },
+    "agent_trajectories": {
+      "count": 20,
+      "total_tokens": 11142,
+      "mean_tokens": 557.1,
+      "median_tokens": 558.0,
+      "maximum_tokens": 558
+    },
+    "authorized_lab": {
+      "count": 20,
+      "total_tokens": 15207,
+      "mean_tokens": 760.35,
+      "median_tokens": 759.5,
+      "maximum_tokens": 782
+    }
+  }
+}
