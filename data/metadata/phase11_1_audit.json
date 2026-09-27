@@ -1,0 +1,92 @@
+{
+  "version": "0.3.0",
+  "training_count": 900,
+  "validation_count": 90,
+  "evaluation_count": 200,
+  "review_count": 50,
+  "capabilities": {
+    "code_generation": 174,
+    "agent_trajectories": 17,
+    "authorized_lab": 76,
+    "debugging": 62,
+    "security_review": 94,
+    "vulnerability_remediation": 178,
+    "agent_tool_use": 130,
+    "vulnerability_detection": 75,
+    "refactoring": 47,
+    "test_generation": 47
+  },
+  "agent_trajectory": {
+    "training_agent_examples": 147,
+    "validation_agent_examples": 16,
+    "training_breakdown": {
+      "simple_tool_use": 0,
+      "single_step_tool_use": 0,
+      "multi_step_tool_use": 0,
+      "full_agent_trajectory": 147
+    },
+    "validation_breakdown": {
+      "simple_tool_use": 0,
+      "single_step_tool_use": 0,
+      "multi_step_tool_use": 0,
+      "full_agent_trajectory": 16
+    },
+    "training_percentage_of_corpus": "16.3%",
+    "validation_percentage_of_corpus": "17.8%"
+  },
+  "sources": {
+    "cybercode_curated_dev": 100,
+    "OpenHermes-Code-Sample": 100,
+    "cybercode_curated_vulnerability_remediation": 160,
+    "cybercode_curated_agent_trajectories": 130,
+    "cybercode_curated_security_review_and_reasoning": 150,
+    "cybercode_curated_debugging_and_refactoring": 140,
+    "cybercode_curated_authorized_labs": 60,
+    "CodeLlama-Instruct-Code-Samples": 60
+  },
+  "licenses": {
+    "MIT": 740,
+    "Apache-2.0": 100,
+    "Llama-2": 60
+  },
+  "security_authorization": {
+    "defensive": 477,
+    "authorized": 207,
+    "explicit": 16,
+    "not_applicable": 200
+  },
+  "vulnerability_remediation_audit": {
+    "inspected": 178,
+    "with_patch": 174,
+    "with_explanation": 160,
+    "with_verification": 178
+  },
+  "quality": {
+    "mean": 97.7778,
+    "median": 100.0,
+    "min": 90.0,
+    "p25": 95.0,
+    "p75": 100.0,
+    "p95": 100.0,
+    "below_threshold_count": 0
+  },
+  "duplicates": {
+    "training_internal_duplicates": 0,
+    "training_validation_duplicates": 0,
+    "training_evaluation_duplicates": 0,
+    "validation_evaluation_duplicates": 0
+  },
+  "provenance": {
+    "missing_provenance_count": 0,
+    "traceable_percentage": "100.0%"
+  },
+  "schema": {
+    "valid_training_rows": 900,
+    "invalid_training_rows": 0,
+    "valid_validation_rows": 90,
+    "invalid_validation_rows": 0
+  },
+  "findings": [
+    "PASS: All forensic integrity checks passed."
+  ]
+}

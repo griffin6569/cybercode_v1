@@ -1,0 +1,18 @@
+{
+  "training_agent_examples": 147,
+  "validation_agent_examples": 16,
+  "training_breakdown": {
+    "simple_tool_use": 0,
+    "single_step_tool_use": 0,
+    "multi_step_tool_use": 0,
+    "full_agent_trajectory": 147
+  },
+  "validation_breakdown": {
+    "simple_tool_use": 0,
+    "single_step_tool_use": 0,
+    "multi_step_tool_use": 0,
+    "full_agent_trajectory": 16
+  },
+  "training_percentage_of_corpus": "16.3%",
+  "validation_percentage_of_corpus": "17.8%"
+}
