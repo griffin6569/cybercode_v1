@@ -1,0 +1,23 @@
+# CyberCodeMini - Azure Configuration
+# WARNING: Do NOT commit real credentials. Use environment variables.
+
+# Azure ML identifiers (set via environment variables or fill in manually)
+subscription_id: ""
+resource_group: ""
+workspace: ""
+compute_name: ""
+
+# Cost protection
+max_runtime_hours: 2
+require_manual_confirmation: true
+auto_shutdown: true
+
+# Compute preferences
+preferred_vm_size: "Standard_NC6s_v3"  # Single T4 or similar
+min_gpu_memory_gb: 16
+max_nodes: 1
+
+# Budget guardrails
+max_cost_per_run_usd: 10.0
+monthly_budget_usd: 50.0
+alert_threshold_pct: 80

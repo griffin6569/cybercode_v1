@@ -1,0 +1,18 @@
+# CyberCodeMini - Model Configuration
+# This file defines the base model used for fine-tuning.
+# Change these values to switch base models without modifying code.
+
+model_name: "Qwen/Qwen2.5-Coder-1.5B-Instruct"
+model_revision: "main"
+tokenizer_name: "Qwen/Qwen2.5-Coder-1.5B-Instruct"
+max_sequence_length: 2048
+trust_remote_code: true
+dtype: "auto"  # auto, float16, bfloat16, float32
+
+# Model loading options
+load_in_4bit: false
+load_in_8bit: false
+device_map: "auto"
+
+# Cache directory (relative to project root or absolute)
+cache_dir: "~/.cache/huggingface/hub"

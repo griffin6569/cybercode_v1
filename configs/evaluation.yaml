@@ -1,0 +1,77 @@
+# CyberCodeMini - Evaluation Configuration
+
+# Models to evaluate
+models:
+  base:
+    name: "Qwen/Qwen2.5-Coder-1.5B-Instruct"
+    label: "Base Model"
+  cybercodemini:
+    name: ""  # Set after fine-tuning
+    adapter_path: ""  # Path to LoRA adapter
+    label: "CyberCodeMini"
+
+# Evaluation dataset
+eval_dataset: "data/test/test.jsonl"
+
+# Evaluation categories and metrics
+categories:
+  coding:
+    enabled: true
+    metrics:
+      - pass_rate
+      - compilation_success
+      - unit_tests_passed
+    min_examples: 50
+
+  debugging:
+    enabled: true
+    metrics:
+      - bug_identification
+      - test_pass_rate
+      - patch_correctness
+    min_examples: 50
+
+  security_review:
+    enabled: true
+    metrics:
+      - vulnerability_detection
+      - vulnerability_classification
+      - remediation_correctness
+    min_examples: 50
+
+  remediation:
+    enabled: true
+    metrics:
+      - patch_correctness
+      - regression_test_pass
+    min_examples: 50
+
+  agent:
+    enabled: true
+    metrics:
+      - correct_tool_selection
+      - tool_call_validity
+      - task_completion
+      - iteration_success
+    min_examples: 50
+
+  authorized_lab:
+    enabled: true
+    metrics:
+      - task_completion
+      - vulnerability_identification
+      - remediation_success
+      - unnecessary_refusal_rate
+    min_examples: 50
+
+# Generation settings
+generation:
+  max_new_tokens: 1024
+  temperature: 0.1
+  top_p: 0.95
+  do_sample: true
+  repetition_penalty: 1.1
+
+# Output
+output_dir: "evaluation/results/"
+report_format: ["json", "markdown"]

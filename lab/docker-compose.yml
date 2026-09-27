@@ -1,0 +1,25 @@
+# CyberCodeMini Security Lab - Docker Compose
+# Phase 13 implementation - placeholder configuration
+
+version: "3.8"
+
+services:
+  # Deliberately vulnerable Flask application
+  vuln-flask:
+    build: ./vulnerable_apps/vuln_flask
+    ports:
+      - "127.0.0.1:5000:5000"
+    networks:
+      - lab-internal
+    # Security: No external network access
+    # Security: Read-only filesystem where possible
+    read_only: true
+    tmpfs:
+      - /tmp
+    security_opt:
+      - no-new-privileges:true
+
+networks:
+  lab-internal:
+    driver: bridge
+    internal: true  # No external network access

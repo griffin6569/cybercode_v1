@@ -1,0 +1,109 @@
+# CyberCodeMini - Dataset Configuration
+# Defines dataset categories, target sizes, and pipeline settings.
+
+# System prompt used in all training examples
+system_prompt: "You are CyberCodeMini, a coding and cybersecurity engineering assistant specialized in secure software development, vulnerability analysis, debugging, and authorized security testing."
+
+# Dataset categories with target example counts
+categories:
+  code_generation:
+    enabled: true
+    target_count: 1500
+    dev_count: 20
+    description: "Code generation across multiple languages"
+    languages:
+      - python
+      - javascript
+      - typescript
+      - java
+      - c
+      - cpp
+      - sql
+      - bash
+      - powershell
+      - go
+      - rust
+
+  debugging:
+    enabled: true
+    target_count: 750
+    dev_count: 15
+    description: "Bug identification, diagnosis, and correction"
+
+  security_review:
+    enabled: true
+    target_count: 1250
+    dev_count: 20
+    description: "Security code review and vulnerability detection"
+    vulnerability_types:
+      - sql_injection
+      - xss
+      - command_injection
+      - path_traversal
+      - insecure_deserialization
+      - ssrf
+      - authentication
+      - authorization
+      - insecure_cryptography
+      - secret_exposure
+      - insecure_file_handling
+      - dependency_vulnerability
+      - race_condition
+      - unsafe_subprocess
+
+  vulnerability_remediation:
+    enabled: true
+    target_count: 750
+    dev_count: 15
+    description: "Vulnerability identification, patching, and verification"
+
+  agent_trajectories:
+    enabled: true
+    target_count: 750
+    dev_count: 15
+    description: "Multi-step agent tool-use workflows"
+
+  authorized_lab:
+    enabled: true
+    target_count: 750
+    dev_count: 15
+    description: "Authorized CTF and lab security tasks"
+
+# Data directories (relative to project root)
+directories:
+  raw: "data/raw"
+  interim: "data/interim"
+  processed: "data/processed"
+  train: "data/train"
+  validation: "data/validation"
+  test: "data/test"
+  metadata: "data/metadata"
+
+# Split ratios
+split:
+  train: 0.8
+  validation: 0.1
+  test: 0.1
+  seed: 42
+  # Split strategy: "random" or "group" (group splits by task/repo ID)
+  strategy: "group"
+  group_key: "source"  # metadata field used for group splitting
+
+# Validation settings
+validation:
+  max_sequence_length: 8192
+  min_message_length: 10
+  max_message_length: 16384
+  required_roles: ["user", "assistant"]
+  allowed_roles: ["system", "user", "assistant", "tool", "tool_result"]
+  check_secrets: true
+  check_pii: true
+  check_duplicates: true
+
+# Deduplication settings
+deduplication:
+  exact: true
+  normalized: true
+  # Embedding-based dedup can be enabled later
+  embedding_based: false
+  similarity_threshold: 0.95

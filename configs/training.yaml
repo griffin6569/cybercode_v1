@@ -1,0 +1,74 @@
+# CyberCodeMini - Training Configuration
+# LoRA/QLoRA supervised fine-tuning settings.
+
+# Base model (references configs/model.yaml)
+base_model: "Qwen/Qwen2.5-Coder-1.5B-Instruct"
+
+# Dataset
+dataset_path: "data/train/train.jsonl"
+validation_path: "data/validation/validation.jsonl"
+
+# Output
+output_dir: "runs/"
+experiment_name: "cybercodemini_lora"
+experiment_version: "v001"
+
+# Training hyperparameters
+epochs: 3
+learning_rate: 2.0e-4
+batch_size: 4
+gradient_accumulation_steps: 4
+warmup_ratio: 0.05
+weight_decay: 0.01
+max_seq_length: 2048
+max_grad_norm: 1.0
+
+# LoRA configuration
+lora_r: 16
+lora_alpha: 32
+lora_dropout: 0.05
+lora_target_modules:
+  - "q_proj"
+  - "k_proj"
+  - "v_proj"
+  - "o_proj"
+  - "gate_proj"
+  - "up_proj"
+  - "down_proj"
+
+# Quantization (for QLoRA)
+quantization:
+  enabled: false
+  bits: 4
+  quant_type: "nf4"
+  double_quant: true
+
+# Logging and checkpointing
+logging_steps: 10
+save_steps: 100
+save_total_limit: 3
+evaluation_strategy: "steps"
+eval_steps: 50
+
+# Performance
+gradient_checkpointing: true
+fp16: false
+bf16: true
+dataloader_num_workers: 4
+
+# Reproducibility
+seed: 42
+
+# Loss masking configuration
+loss_masking:
+  strategy: "assistant_and_tool_outputs"  # Options: assistant_only, assistant_and_tool_outputs, all_messages
+
+# Sequence packing
+packing: false
+
+# Smoke test settings (override for quick validation)
+smoke_test:
+  enabled: false
+  max_steps: 10
+  max_examples: 50
+  label: "SMOKE_TEST"
