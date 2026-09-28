@@ -38,3 +38,12 @@ def test_3_notebook_contains_sha256_and_model_id():
     assert "Qwen/Qwen2.5-Coder-1.5B-Instruct" in raw_text
     assert "cybercode_v1" in raw_text
     assert "Standard_NV36ads_A10_v5" not in raw_text  # Free from Azure GPU blocker dependency
+
+
+def test_4_modal_script_exists():
+    """Test 4: Modal cloud training script exists and contains target SHA-256."""
+    modal_script = BASE_DIR / "scripts" / "modal_train.py"
+    assert modal_script.exists(), "scripts/modal_train.py does not exist"
+    text = modal_script.read_text(encoding="utf-8")
+    assert "c58c523cd8a7b6316054ca7289f98a427e4d95611ab4a27b024033c304314df5" in text
+
