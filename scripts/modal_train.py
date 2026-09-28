@@ -47,10 +47,11 @@ def train_cybercodemini_on_modal():
     """Execute training pipeline on serverless cloud GPU."""
     import hashlib
     import torch
+    import sys
+    from datasets import load_dataset
     from transformers import AutoTokenizer, AutoModelForCausalLM, TrainingArguments, BitsAndBytesConfig
     from peft import LoraConfig, get_peft_model, prepare_model_for_kbit_training
     from trl import SFTTrainer
-    from datasets import load_dataset
 
     print("=== CyberCodeMini v0.3.0 Cloud GPU Terminal Execution ===")
     
@@ -61,6 +62,9 @@ def train_cybercodemini_on_modal():
     else:
         os.chdir("cybercode_v1")
         os.system("git pull origin main")
+
+    cwd = os.getcwd()
+    sys.path = [p for p in sys.path if p not in ("", ".", cwd)]
 
     # 2. Verify frozen dataset hash
     train_path = Path("data/frozen/v0.3.0/training.jsonl")
