@@ -63,7 +63,7 @@ def train_cybercodemini_on_modal():
         os.system("git pull origin main")
 
     # 2. Verify frozen dataset hash
-    train_path = Path("data/processed/frozen/v0.3.0/cybercodemini_train_v0.3.0.jsonl")
+    train_path = Path("data/frozen/v0.3.0/training.jsonl")
     assert train_path.exists(), f"Dataset missing: {train_path}"
     train_sha = hashlib.sha256(train_path.read_bytes()).hexdigest()
     expected_sha = "c58c523cd8a7b6316054ca7289f98a427e4d95611ab4a27b024033c304314df5"
@@ -105,8 +105,8 @@ def train_cybercodemini_on_modal():
 
     # 4. Load dataset
     dataset = load_dataset("json", data_files={
-        "train": "data/processed/frozen/v0.3.0/cybercodemini_train_v0.3.0.jsonl",
-        "validation": "data/processed/frozen/v0.3.0/cybercodemini_val_v0.3.0.jsonl",
+        "train": "data/frozen/v0.3.0/training.jsonl",
+        "validation": "data/frozen/v0.3.0/validation.jsonl",
     })
 
     def format_msg(example):
