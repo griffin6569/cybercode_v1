@@ -11,7 +11,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
-from datasets.validators.validator import validate_file
+from cybercode_datasets.validators.validator import validate_file
 
 
 def main():

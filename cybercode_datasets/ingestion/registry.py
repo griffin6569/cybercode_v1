@@ -12,7 +12,7 @@ from dataclasses import asdict, dataclass, field
 from pathlib import Path
 from typing import Any, Optional
 
-from datasets.ingestion.license import LicensePolicyValidator
+from cybercode_datasets.ingestion.license import LicensePolicyValidator
 
 
 @dataclass

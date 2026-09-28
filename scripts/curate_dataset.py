@@ -14,9 +14,9 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
-from datasets.filters.quality_filter import QualityFilter
-from datasets.provenance.provenance import DatasetRegistry
-from datasets.schemas.schema import TrainingExample
+from cybercode_datasets.filters.quality_filter import QualityFilter
+from cybercode_datasets.provenance.provenance import DatasetRegistry
+from cybercode_datasets.schemas.schema import TrainingExample
 
 
 def generate_manifest(

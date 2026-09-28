@@ -17,8 +17,8 @@ from pathlib import Path
 # Add project root to sys.path
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
-from datasets.filters.quality_filter import QualityFilter
-from datasets.schemas.schema import TrainingExample
+from cybercode_datasets.filters.quality_filter import QualityFilter
+from cybercode_datasets.schemas.schema import TrainingExample
 
 
 def load_jsonl(path: Path) -> list[dict]:
@@ -201,7 +201,7 @@ def run_forensic_audit():
                 eval_prompts.add(p)
 
     # 9. Quality Scores
-    from datasets.validators.quality import score_example
+    from cybercode_datasets.validators.quality import score_example
     quality_scores = []
     for item in train_items:
         ex = TrainingExample.model_validate(item)

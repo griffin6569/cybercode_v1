@@ -13,7 +13,7 @@ from pathlib import Path
 # Add project root to sys.path
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
-from datasets.schemas.capabilities import TARGET_CAPABILITY_RANGES, Capability
+from cybercode_datasets.schemas.capabilities import TARGET_CAPABILITY_RANGES, Capability
 
 
 def map_category_to_capability(category: str) -> str:

@@ -16,8 +16,8 @@ import re
 from pathlib import Path
 from typing import Any, Optional, Sequence
 
-from datasets.schemas.schema import MessageRole, TrainingExample
-from datasets.validators.quality import score_example
+from cybercode_datasets.schemas.schema import MessageRole, TrainingExample
+from cybercode_datasets.validators.quality import score_example
 
 # Known test benchmark prompt signatures to prevent benchmark data leakage / contamination
 CONTAMINATION_SIGNATURES = [

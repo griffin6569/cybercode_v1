@@ -11,14 +11,14 @@ import random
 from pathlib import Path
 from typing import Any, Optional
 
-from datasets.adapters.hf_conversational_adapter import HuggingFaceConversationalAdapter
-from datasets.adapters.security_review_adapter import SecurityReviewAdapter
-from datasets.adapters.trajectory_adapter import AgentTrajectoryAdapter
-from datasets.ingestion.license import LicensePolicyValidator
-from datasets.ingestion.metadata import ContentClassifier
-from datasets.ingestion.provenance import create_provenance_record
-from datasets.ingestion.registry import IngestionRegistry
-from datasets.schemas.schema import TrainingExample
+from cybercode_datasets.adapters.hf_conversational_adapter import HuggingFaceConversationalAdapter
+from cybercode_datasets.adapters.security_review_adapter import SecurityReviewAdapter
+from cybercode_datasets.adapters.trajectory_adapter import AgentTrajectoryAdapter
+from cybercode_datasets.ingestion.license import LicensePolicyValidator
+from cybercode_datasets.ingestion.metadata import ContentClassifier
+from cybercode_datasets.ingestion.provenance import create_provenance_record
+from cybercode_datasets.ingestion.registry import IngestionRegistry
+from cybercode_datasets.schemas.schema import TrainingExample
 
 
 class HuggingFaceIngestionEngine:

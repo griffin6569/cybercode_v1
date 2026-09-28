@@ -14,8 +14,8 @@ from dataclasses import asdict, dataclass, field
 from pathlib import Path
 from typing import Any, Optional, Sequence
 
-from datasets.formatting.chat_formatter import ChatFormatter, convert_example_to_template_messages
-from datasets.schemas.schema import MessageRole, TrainingExample
+from cybercode_datasets.formatting.chat_formatter import ChatFormatter, convert_example_to_template_messages
+from cybercode_datasets.schemas.schema import MessageRole, TrainingExample
 
 
 @dataclass

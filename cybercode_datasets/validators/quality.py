@@ -16,7 +16,7 @@ import re
 from dataclasses import dataclass, field
 from typing import Any, Optional
 
-from datasets.schemas.schema import Authorization, MessageRole, TrainingExample
+from cybercode_datasets.schemas.schema import Authorization, MessageRole, TrainingExample
 
 # Common low-information / useless phrases to penalize
 LOW_INFO_RESPONSES = [

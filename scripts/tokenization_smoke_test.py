@@ -17,8 +17,8 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
-from datasets.schemas.schema import TrainingExample
-from datasets.tokenization import CyberCodeTokenizer, compute_tokenization_stats
+from cybercode_datasets.schemas.schema import TrainingExample
+from cybercode_datasets.tokenization import CyberCodeTokenizer, compute_tokenization_stats
 from training.collator import CyberCodeDataCollator
 
 

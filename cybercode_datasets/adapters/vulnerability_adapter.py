@@ -8,8 +8,8 @@ from __future__ import annotations
 
 from typing import Any
 
-from datasets.adapters.base_adapter import BaseAdapter
-from datasets.schemas.schema import (
+from cybercode_datasets.adapters.base_adapter import BaseAdapter
+from cybercode_datasets.schemas.schema import (
     Authorization,
     Category,
     Difficulty,

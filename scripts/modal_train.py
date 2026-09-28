@@ -63,9 +63,6 @@ def train_cybercodemini_on_modal():
         os.chdir("cybercode_v1")
         os.system("git pull origin main")
 
-    cwd = os.getcwd()
-    sys.path = [p for p in sys.path if p not in ("", ".", cwd)]
-
     # 2. Verify frozen dataset hash
     train_path = Path("data/frozen/v0.3.0/training.jsonl")
     assert train_path.exists(), f"Dataset missing: {train_path}"

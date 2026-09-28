@@ -9,7 +9,7 @@ from __future__ import annotations
 import json
 from typing import Any, Optional
 
-from datasets.schemas.schema import MessageRole, TrainingExample
+from cybercode_datasets.schemas.schema import MessageRole, TrainingExample
 
 
 def convert_example_to_template_messages(example: TrainingExample) -> list[dict[str, Any]]:

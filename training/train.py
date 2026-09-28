@@ -17,9 +17,9 @@ import yaml
 # Add project root to sys.path
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
-from datasets.schemas.schema import TrainingExample
-from datasets.tokenization import CyberCodeTokenizer
-from datasets.validators.validator import validate_file
+from cybercode_datasets.schemas.schema import TrainingExample
+from cybercode_datasets.tokenization import CyberCodeTokenizer
+from cybercode_datasets.validators.validator import validate_file
 from training.checkpointing import create_checkpoint, find_latest_checkpoint, validate_checkpoint
 from training.collator import CyberCodeDataCollator
 from training.export import export_adapter

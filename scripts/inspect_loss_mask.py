@@ -13,8 +13,8 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
-from datasets.schemas.schema import MessageRole, TrainingExample
-from datasets.tokenization import CyberCodeTokenizer
+from cybercode_datasets.schemas.schema import MessageRole, TrainingExample
+from cybercode_datasets.tokenization import CyberCodeTokenizer
 
 
 def visualize_loss_mask(example: TrainingExample, strategy: str = "assistant_and_tool_outputs"):

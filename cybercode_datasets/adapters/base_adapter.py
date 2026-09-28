@@ -16,9 +16,9 @@ from __future__ import annotations
 from abc import ABC, abstractmethod
 from typing import Any, Optional, Sequence
 
-from datasets.provenance.provenance import DatasetRegistry, DatasetRegistryEntry
-from datasets.schemas.schema import TrainingExample
-from datasets.validators.validator import ValidationReport, validate_file
+from cybercode_datasets.provenance.provenance import DatasetRegistry, DatasetRegistryEntry
+from cybercode_datasets.schemas.schema import TrainingExample
+from cybercode_datasets.validators.validator import ValidationReport, validate_file
 
 
 class DatasetAdapter(ABC):

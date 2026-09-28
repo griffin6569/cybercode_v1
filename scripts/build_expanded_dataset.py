@@ -15,13 +15,13 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
-from datasets.adapters.hf_conversational_adapter import HuggingFaceConversationalAdapter
-from datasets.adapters.security_review_adapter import SecurityReviewAdapter
-from datasets.adapters.trajectory_adapter import AgentTrajectoryAdapter
-from datasets.filters.quality_filter import QualityFilter
-from datasets.ingestion.huggingface import HuggingFaceIngestionEngine
-from datasets.ingestion.registry import IngestionRegistry
-from datasets.schemas.schema import (
+from cybercode_datasets.adapters.hf_conversational_adapter import HuggingFaceConversationalAdapter
+from cybercode_datasets.adapters.security_review_adapter import SecurityReviewAdapter
+from cybercode_datasets.adapters.trajectory_adapter import AgentTrajectoryAdapter
+from cybercode_datasets.filters.quality_filter import QualityFilter
+from cybercode_datasets.ingestion.huggingface import HuggingFaceIngestionEngine
+from cybercode_datasets.ingestion.registry import IngestionRegistry
+from cybercode_datasets.schemas.schema import (
     Authorization,
     Category,
     Difficulty,

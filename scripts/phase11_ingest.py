@@ -17,9 +17,9 @@ from pathlib import Path
 # Add project root to sys.path
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
-from datasets.filters.quality_filter import QualityFilter
-from datasets.schemas.capabilities import Capability, CapabilityClassification
-from datasets.schemas.schema import (
+from cybercode_datasets.filters.quality_filter import QualityFilter
+from cybercode_datasets.schemas.capabilities import Capability, CapabilityClassification
+from cybercode_datasets.schemas.schema import (
     Authorization,
     Category,
     Difficulty,

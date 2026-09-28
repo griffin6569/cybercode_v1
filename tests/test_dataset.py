@@ -13,7 +13,7 @@ import pytest
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(PROJECT_ROOT))
 
-from datasets.schemas.schema import (
+from cybercode_datasets.schemas.schema import (
     Authorization,
     Category,
     Difficulty,
@@ -272,7 +272,7 @@ class TestValidation:
         }
 
     def test_valid_file(self, tmp_path):
-        from datasets.validators.validator import validate_file
+        from cybercode_datasets.validators.validator import validate_file
 
         f = tmp_path / "valid.jsonl"
         self._write_jsonl([self._valid_example()], f)
@@ -284,7 +284,7 @@ class TestValidation:
         assert not report.has_critical_errors
 
     def test_invalid_json(self, tmp_path):
-        from datasets.validators.validator import validate_file
+        from cybercode_datasets.validators.validator import validate_file
 
         f = tmp_path / "invalid.jsonl"
         f.write_text("this is not json\n")
@@ -294,7 +294,7 @@ class TestValidation:
         assert report.has_critical_errors
 
     def test_duplicate_detection(self, tmp_path):
-        from datasets.validators.validator import validate_file
+        from cybercode_datasets.validators.validator import validate_file
 
         ex = self._valid_example()
         f = tmp_path / "dupes.jsonl"
@@ -304,7 +304,7 @@ class TestValidation:
         assert report.duplicate_count == 1
 
     def test_secret_detection(self, tmp_path):
-        from datasets.validators.validator import validate_file
+        from cybercode_datasets.validators.validator import validate_file
 
         ex = self._valid_example()
         ex["messages"][2]["content"] = "Use api_key = 'sk-1234567890abcdefghij1234567890abcdef'"
@@ -315,7 +315,7 @@ class TestValidation:
         assert report.potential_secrets >= 1
 
     def test_missing_provenance(self, tmp_path):
-        from datasets.validators.validator import validate_file
+        from cybercode_datasets.validators.validator import validate_file
 
         ex = self._valid_example()
         del ex["metadata"]["source"]
@@ -327,13 +327,13 @@ class TestValidation:
         assert report.missing_provenance >= 1
 
     def test_file_not_found(self):
-        from datasets.validators.validator import validate_file
+        from cybercode_datasets.validators.validator import validate_file
 
         report = validate_file("nonexistent.jsonl")
         assert report.has_critical_errors
 
     def test_report_to_dict(self, tmp_path):
-        from datasets.validators.validator import validate_file
+        from cybercode_datasets.validators.validator import validate_file
 
         f = tmp_path / "valid.jsonl"
         self._write_jsonl([self._valid_example()], f)
@@ -345,7 +345,7 @@ class TestValidation:
 
     def test_dev_dataset_passes(self):
         """Ensure the actual dev dataset passes validation."""
-        from datasets.validators.validator import validate_file
+        from cybercode_datasets.validators.validator import validate_file
 
         dev_path = PROJECT_ROOT / "data" / "raw" / "dev_dataset.jsonl"
         if not dev_path.exists():

@@ -12,8 +12,8 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
-from datasets.ingestion.downloader import SafeDatasetDownloader
-from datasets.ingestion.huggingface import HuggingFaceIngestionEngine
+from cybercode_datasets.ingestion.downloader import SafeDatasetDownloader
+from cybercode_datasets.ingestion.huggingface import HuggingFaceIngestionEngine
 
 
 def main():

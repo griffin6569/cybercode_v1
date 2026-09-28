@@ -20,7 +20,7 @@ from pathlib import Path
 # Add project root to sys.path
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
-from datasets.schemas.schema import TrainingExample
+from cybercode_datasets.schemas.schema import TrainingExample
 
 
 def load_jsonl(path: Path) -> list[dict]:

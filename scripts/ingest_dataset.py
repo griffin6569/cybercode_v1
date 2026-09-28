@@ -13,12 +13,12 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
-from datasets.adapters.ctf_lab_adapter import CTFLabAdapter
-from datasets.adapters.generic_instruction_adapter import GenericInstructionAdapter
-from datasets.adapters.hf_conversational_adapter import HuggingFaceConversationalAdapter
-from datasets.adapters.security_review_adapter import SecurityReviewAdapter
-from datasets.adapters.trajectory_adapter import AgentTrajectoryAdapter
-from datasets.provenance.provenance import DatasetRegistry
+from cybercode_datasets.adapters.ctf_lab_adapter import CTFLabAdapter
+from cybercode_datasets.adapters.generic_instruction_adapter import GenericInstructionAdapter
+from cybercode_datasets.adapters.hf_conversational_adapter import HuggingFaceConversationalAdapter
+from cybercode_datasets.adapters.security_review_adapter import SecurityReviewAdapter
+from cybercode_datasets.adapters.trajectory_adapter import AgentTrajectoryAdapter
+from cybercode_datasets.provenance.provenance import DatasetRegistry
 
 
 def get_adapter(adapter_name: str, source_name: str, registry: DatasetRegistry):

@@ -7,9 +7,9 @@ from __future__ import annotations
 
 from typing import Any, Optional
 
-from datasets.adapters.base_adapter import DatasetAdapter
-from datasets.provenance.provenance import DatasetRegistry
-from datasets.schemas.schema import (
+from cybercode_datasets.adapters.base_adapter import DatasetAdapter
+from cybercode_datasets.provenance.provenance import DatasetRegistry
+from cybercode_datasets.schemas.schema import (
     Authorization,
     Category,
     Difficulty,

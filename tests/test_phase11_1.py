@@ -12,8 +12,8 @@ import json
 from pathlib import Path
 
 import pytest
-from datasets.schemas.capabilities import Capability
-from datasets.schemas.schema import TrainingExample
+from cybercode_datasets.schemas.capabilities import Capability
+from cybercode_datasets.schemas.schema import TrainingExample
 from scripts.analyze_capability_gaps import analyze_gaps
 
 BASE_DIR = Path(__file__).resolve().parent.parent

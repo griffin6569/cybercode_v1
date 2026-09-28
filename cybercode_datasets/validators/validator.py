@@ -28,7 +28,7 @@ from pydantic import ValidationError
 # Add project root to path for imports
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
-from datasets.schemas.schema import MessageRole, TrainingExample
+from cybercode_datasets.schemas.schema import MessageRole, TrainingExample
 
 
 # Common dummy/placeholder secret strings used in educational code/prompts

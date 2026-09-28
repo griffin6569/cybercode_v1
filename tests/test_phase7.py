@@ -19,17 +19,17 @@ import json
 from pathlib import Path
 import pytest
 
-from datasets.adapters import (
+from cybercode_datasets.adapters import (
     CTFLabAdapter,
     GenericInstructionAdapter,
     HuggingFaceConversationalAdapter,
     SecurityReviewAdapter,
     AgentTrajectoryAdapter,
 )
-from datasets.filters.quality_filter import QualityFilter
-from datasets.provenance.provenance import DatasetRegistry, DatasetRegistryEntry
-from datasets.schemas.schema import Authorization, Category, Environment, MessageRole, TrainingExample
-from datasets.validators.quality import score_example
+from cybercode_datasets.filters.quality_filter import QualityFilter
+from cybercode_datasets.provenance.provenance import DatasetRegistry, DatasetRegistryEntry
+from cybercode_datasets.schemas.schema import Authorization, Category, Environment, MessageRole, TrainingExample
+from cybercode_datasets.validators.quality import score_example
 from scripts.curate_dataset import generate_manifest
 
 

@@ -50,7 +50,7 @@ def test_schema() -> bool:
     """Test that the schema module loads and validates correctly."""
     _section("SCHEMA VALIDATION")
     try:
-        from datasets.schemas.schema import (
+        from cybercode_datasets.schemas.schema import (
             Category,
             ExampleMetadata,
             Message,
@@ -118,7 +118,7 @@ def test_validation() -> bool:
     """Test dataset validation on the dev dataset."""
     _section("DATASET VALIDATION")
     try:
-        from datasets.validators.validator import validate_file
+        from cybercode_datasets.validators.validator import validate_file
 
         dev_path = PROJECT_ROOT / "data" / "raw" / "dev_dataset.jsonl"
         if not dev_path.exists():

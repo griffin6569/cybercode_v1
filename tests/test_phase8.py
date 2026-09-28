@@ -10,9 +10,9 @@ import json
 from pathlib import Path
 import pytest
 
-from datasets.formatting.chat_formatter import ChatFormatter, convert_example_to_template_messages
-from datasets.schemas.schema import Authorization, Category, Environment, MessageRole, ToolCall, TrainingExample
-from datasets.tokenization import CyberCodeTokenizer, TokenizedExample, compute_tokenization_stats
+from cybercode_datasets.formatting.chat_formatter import ChatFormatter, convert_example_to_template_messages
+from cybercode_datasets.schemas.schema import Authorization, Category, Environment, MessageRole, ToolCall, TrainingExample
+from cybercode_datasets.tokenization import CyberCodeTokenizer, TokenizedExample, compute_tokenization_stats
 from scripts.split_dataset import split_dataset
 from training.collator import CyberCodeDataCollator
 
