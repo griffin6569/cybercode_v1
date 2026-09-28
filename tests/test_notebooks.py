@@ -34,7 +34,7 @@ def test_2_notebook_json_validity_and_cells():
 def test_3_notebook_contains_sha256_and_model_id():
     """Test 3: Notebook verifies frozen v0.3.0 SHA-256 and targets Qwen2.5-Coder-1.5B."""
     raw_text = NOTEBOOK_PATH.read_text(encoding="utf-8")
-    assert "c58c523cd8a7b6316054ca7289f98a427e4d95611ab4a27b024033c304314df5" in raw_text
+    assert "2adf679749e085b227a6f7e5545fe5a7d2cd8f13d197873cee929e21701ddb14" in raw_text
     assert "Qwen/Qwen2.5-Coder-1.5B-Instruct" in raw_text
     assert "cybercode_v1" in raw_text
     assert "Standard_NV36ads_A10_v5" not in raw_text  # Free from Azure GPU blocker dependency
